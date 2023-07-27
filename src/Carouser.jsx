@@ -34,7 +34,7 @@ const CustomSlider = ({ items }) => {
   }, []);
 
   // Calculate the item width and height for different items per row
-  const itemWidth = `calc(${100 / itemsToShow}% - 20px)`;
+  const itemWidth =items.length>1? `calc(${100 / itemsToShow}% - 20px)`:"";
   const itemHeight = '200px'; // Set the desired height here
 
   return (
